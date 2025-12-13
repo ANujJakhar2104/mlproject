@@ -1,5 +1,6 @@
 pandas
 numpy
 pandas
-sklearn
+scikit-learn
+dill
 -e .
