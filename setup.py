@@ -14,7 +14,6 @@ def get_requirements(file_path: str) -> List[str]:
             line = raw.strip()
             if not line or line.startswith("#"):
                 continue
-            # ignore pip flags / editable installs / VCS links / local file paths
             if any(line.startswith(prefix) for prefix in IGNORED_PREFIXES):
                 continue
             reqs.append(line)
